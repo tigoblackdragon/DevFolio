@@ -1,0 +1,540 @@
+body {
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bg-black- {
+    --bs-bg-opacity: 0.7;
+    background-color: rgba(var(--bs-black-rgb),
+            var(--bs-bg-opacity))
+}
+
+.brn-sty {
+    font-size: xx-large;
+    color: rgba(var(--bs-white-rgb));
+    font-weight: 600;
+}
+
+.mnu-sty {
+    font-size: large;
+    color: rgba(var(--bs-white-rgb));
+    font-weight: 700;
+}
+
+.nav-underline {
+    --bs-nav-underline-gap: 1rem;
+    --bs-nav-underline-border-width: 0.125rem;
+    --bs-nav-underline-link-active-color: var(--bs-white-rgb);
+    gap: var(--bs-nav-underline-gap)
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--bs-white-rgb);
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-white-rgb);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.bg-img {
+    max-height: 100vh;
+    background-image: url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.ovr-ly {
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.hro-sty {
+    font-size: 4.5rem;
+    color: rgba(var(--bs-white-rgb));
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 50px;
+}
+
+.brd {
+    border: 2px solid black !important;
+    ;
+}
+
+.min-vh-75 {
+    min-height: 50vh !important
+}
+
+.bg-gry {
+    background-color: rgb(245, 245, 245);
+}
+
+.about p,
+.left-sec span {
+    color: rgba(78, 78, 78, 1);
+    font-size: 16px;
+}
+
+.about h2 {
+    color: black;
+    font-size: 30px;
+}
+
+.about .tit::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    top: 45px;
+}
+
+
+.crd-hd {
+    font-weight: 700;
+}
+
+.left-sec img {
+    left: 7vh;
+    top: 1vh;
+}
+
+.serv h2 {
+    font-size: 50px;
+    color: black;
+    font-weight: 700;
+}
+
+.serv p {
+    font-size: 18px;
+    text-align: center;
+    color: rgba(78, 78, 78, 1);
+}
+
+.serv .tit::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: #0078ff;
+    width: 50px;
+    top: 120px;
+    left: 48%;
+
+}
+
+
+
+.ser-bx {
+    text-align: center;
+    border-radius: 1rem;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 3rem;
+}
+
+.ser-tit {
+    font-size: 30px;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    box-shadow: (0, 0, 0, 0.1) 0px 13px 8px -10px;
+
+}
+
+.ico-cir {
+    transition: all 500ms ease 0s;
+    width: 100px;
+    height: 100px;
+    font-size: 3.5rem;
+    text-align: center;
+    box-shadow: rgb(0, 120, 255) 0px 0px 0px 10px;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: rgb(30, 30, 30);
+}
+
+.ser-bx:hover .ico-cir {
+    box-shadow: rgb(0, 120, 255, 0.2) 0px 0px 0px 10px;
+    background-color: rgb(0, 120, 255);
+    color: #ffffff;
+}
+
+.count {
+    background-image: url(../img/counters-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.ovr-rly {
+    background-color: rgb(0, 120, 255);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 0;
+}
+
+.count .container {
+    position: relative;
+
+
+}
+
+.cont-box {
+    color: #CDE1F8;
+    font-size: 35px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+
+}
+.cont-ico {
+    margin-bottom: 1rem;
+}
+
+.cnt-ico-cir {
+    display: inline-flex;
+    justify-content: space-around;
+    transition: all 500ms ease 0s;
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: #ffffff 0px 0px 0px 8px;
+    display: block;
+    border-radius: 50%;
+    margin: 0px auto;
+    margin-top: 10px;
+    padding-bottom: px;
+    color: rgb(30, 30, 30);
+}
+.cont-text{
+    font-size: 20px;
+}
+
+.lin .tit::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: #0078ff;
+    width: 50px;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.tit {
+    font-size: 50px;
+    color: black;
+    font-weight: 700;
+}
+
+.card-body h2 {
+    font-size: 20px;
+}
+
+.content {
+    font-size: 14px;
+    box-sizing: border-box;
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.icon {
+    padding-top: 1vh;
+    font-size: 3rem;
+    padding-left: 0;
+
+}
+
+.card-body {
+    flex: 1 1 auto;
+    color: var(--bs-card-color);
+   
+   min-width: 5rem;
+   box-sizing: border-box;
+}
+
+.card-body .col-sm-9 {
+    padding-top: 1.5rem;
+}
+
+
+.card img {
+    transition: 500ms ease;
+}
+.card:hover img {
+    transform: scale(1.2);
+
+}
+
+.card a {
+    overflow: hidden;
+}
+
+.crd:hover img {
+    transform: scale(1.2);
+
+}
+
+.crd {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.carou {
+    background-image: url(../img/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.carousel-inner img {
+    opacity: 5;
+    border-radius: 50%;
+    width: 20%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.carousel-inner button {
+    border-radius: 50%;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.carousel-caption h5 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.crd {
+    border-radius: 0;
+    margin-left: 0;
+}
+
+.fst-sec {
+    margin: 2rem 1rem 1rem 1rem;
+
+}
+
+.fst-sec a {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fst-sec h5:hover {
+    color: #0078FF;
+}
+
+.fst-sec h5 {
+    font-size: 20px;
+    font-weight: 500;
+    transition: 500ms ease;
+}
+
+.icon .fa-clock {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.crd2 .content img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+
+
+.crd2 img {
+    border-radius: 0;
+}
+
+.crd2 .card-body {
+   min-height: 1rem;
+    background-color: #F1F2F4;
+
+}
+
+.crd2 .btn {
+    cursor: auto;
+    width: 70px;
+    font-size: 11px;
+    pointer-events: none;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+
+.fas {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 50;
+    text-transform: lowercase;
+
+}
+.crd2 .bt {
+    width: 90px;
+}
+.contc {
+    background-image: url(../img/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: black;
+    font-size: 10px;
+    font-weight: 500;
+
+}
+.contc .tit::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    top: 100px;
+}
+.contc .tit{
+    font-size: 32px;
+    font-weight: 500;
+
+}
+.container{
+    padding-right: 0;
+}
+
+.mb-10 {
+    margin-bottom: 40px;
+}
+.ri p{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.mid-con span{
+    color: #0078ff;
+    font-size: 25px;
+    margin-right: 10px;
+
+}
+.mid-con div{
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.contc .form-control{
+    margin-bottom: 10px;
+}
+.soc-cir {
+    transition: all 500ms ease 0s;
+    width: 40px;
+    height: 40px;
+    font-size: 1.7rem;
+    text-align: center;
+    box-shadow: #0078ff 0px 0px 0px 4px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: rgb(30, 30, 30);
+    margin-right: 15px;
+    padding-top: 5px;
+}
+
+.social .a:hover .soc-cir {
+    box-shadow: rgb(0, 120, 255, 0.2) 0px 0px 0px 6px;
+    background-color: #0078ff;
+    color: #ffffff;
+}
+.a{
+    max-height:50px ;
+    max-width: 50px;
+}
+.top{
+    position: fixed;
+    z-index: 99;
+    width: 45px;
+    right: 15px;
+    bottom: 15px;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: #0078FF;
+    height: 45px;
+    border-radius: 50%;
+}
+footer{
+    background-color: #0062D3;
+    min-height: 100px;
+    text-align: center;
+    font-family: cursive;
+}
+footer span{
+    font-size: xx-large;
+}
+img{
+    display: inline;
+}
+footer .border-to{
+    border: 5px solid #0062D3;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .carousel-caption h5{
+        font-size: large;
+       
+       
+    }
+    .carousel-caption p{
+        font-size:medium;
+        
+       
+        
+    }
+}
